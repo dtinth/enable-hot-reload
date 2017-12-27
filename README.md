@@ -1,9 +1,11 @@
 # enable-hot-reload
 
-**Reliable opt-in hot module replacement for React components. Compatible with `create-react-app`.**
+**Library to generate reliable hot-reloadable React components. Compatible with `create-react-app`.**
 
 This library is a simple wrapper around webpack’s HMR API to make it easier to create
 hot-reloadable React components.
+
+**This library should be used *strategically* in components where hot-reloading would be very beneficial.** Don’t go overboard and enable hot reload on every component!
 
 
 ## Installation
