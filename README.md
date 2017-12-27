@@ -18,7 +18,7 @@ yarn add enable-hot-reload
 First, put this into the module you want to opt in to hot module replacement:
 
 ```js
-import enableHotReload from './enable-hot-reload'
+import enableHotReload from 'enable-hot-reload'
 const hot = enableHotReload(module)
 ```
 
