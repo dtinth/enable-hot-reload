@@ -1,7 +1,7 @@
 {
   "name": "enable-hot-reload",
   "description": "Reliable opt-in hot module replacement for React components. Compatible with `create-react-app`.",
-  "version": "0.0.0",
+  "version": "1.0.0-0",
   "main": "src/enable-hot-reload.js",
   "files": [
     "src/enable-hot-reload.js"
@@ -27,7 +27,7 @@
     "test": "eslint --config lib.eslintrc --no-eslintrc src/enable-hot-reload.js",
     "eject": "react-scripts eject"
   },
-  "dependencies": { },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dtinth/enable-hot-reload.git"
