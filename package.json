@@ -1,0 +1,41 @@
+{
+  "name": "enable-hot-reload",
+  "description": "Reliable opt-in hot module replacement for React components. Compatible with `create-react-app`.",
+  "version": "0.0.0",
+  "main": "src/enable-hot-reload.js",
+  "files": [
+    "src/enable-hot-reload.js"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^8.1.2",
+    "eslint": "^4.14.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "eslint --config lib.eslintrc --no-eslintrc src/enable-hot-reload.js",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": { },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtinth/enable-hot-reload.git"
+  },
+  "author": "Thai Pangsakulyanont <org.yi.dttvb@gmail.com> (http://dt.in.th/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dtinth/enable-hot-reload/issues"
+  },
+  "homepage": "https://github.com/dtinth/enable-hot-reload#readme"
+}
