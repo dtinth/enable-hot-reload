@@ -1,7 +1,7 @@
 {
   "name": "enable-hot-reload",
   "description": "Library to generate reliable hot-reloadable React components. Compatible with `create-react-app`.",
-  "version": "1.0.0-0",
+  "version": "1.0.0-1",
   "main": "src/enable-hot-reload.js",
   "files": [
     "src/enable-hot-reload.js"
