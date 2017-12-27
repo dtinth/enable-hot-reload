@@ -2,8 +2,10 @@
 
 **Library to generate make React components hot-reloadable. Compatible with `create-react-app`.**
 
-This library is a simple wrapper around webpack’s HMR API to make it easier to create
-hot-reloadable React components.
+This library is a simple wrapper around webpack’s HMR API
+to make it easier to create hot-reloadable React components.
+**No loader or Babel transform plugins needed.**
+The goal of this library is to be as simple and without magic as possible (the [source code](src/enable-hot-reload.js) is less than 200 lines).
 
 **This library should be used *strategically* in components where hot-reloading would be very beneficial.** Don’t go overboard and enable hot reload on every component!
 
@@ -46,14 +48,8 @@ Use `hot(React, Component[, name])` to generate a hot-reloadable wrapper.
     export const Layout = hot(React, _Layout, 'Layout')
     ```
 
-`hot(React, Component[, name])` returns a **wrapper component.**
-To access the wrapped component class, use `App.WrappedComponent`.
-
-**refs are intentionally not supported** so that you don’t go overboard with
-this library and make everything hot-reloadable.
-
-Instead, you should enable hot reloading *strategically*,
-where you would greatly benefit from having the component hot-reloadable.
+`hot(React, Component[, name])` returns a **wrapper component class.**
+Use `.WrappedComponent` to access the wrapped component class.
 
 
 ## API
@@ -87,7 +83,8 @@ Notes:
         and make that component hot-reloadable instead.
 
   - **refs are not supported.**
-    You shouldn’t have to hot-reload a component that you need to `ref` it.
+    Again, this library should be used *strategically*.
+    In most cases, you shouldn’t have to hot-reload a component that you need to `ref` it.
 
       - Workaround:
         If you insist of having a ref-able hot-reloadable component,
