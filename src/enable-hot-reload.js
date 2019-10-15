@@ -1,7 +1,7 @@
 /* eslint no-proto: off */
 
 // I am writing this in plain ES5 because I don’t want to fiddle with build tools. :)
-
+var ReactIs = require('react-is')
 var modulePotRegistry = { }
 
 module.exports = function enableHotReload (module) {
@@ -124,7 +124,7 @@ function createPot () {
 }
 
 function assertComponent (component, where) {
-  if (typeof component !== 'function') {
+  if (!ReactIs.isValidElementType(component)) {
     throw new Error('Expected a React component to be passed to hot(React, Component).')
   }
 }

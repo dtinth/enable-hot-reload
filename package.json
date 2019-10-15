@@ -27,7 +27,9 @@
     "test": "eslint --config lib.eslintrc --no-eslintrc src/enable-hot-reload.js",
     "eject": "react-scripts eject"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react-is": "^16.10.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dtinth/enable-hot-reload.git"
